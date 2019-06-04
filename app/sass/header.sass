@@ -3,13 +3,38 @@
 @import "libs"
 @import "start"
 
-.header
+.n-icon
+  display: inline-block
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+.n-icon-copyright
+  width: 15px
+  height: 15px
+  background-image: url('../img/icons/icon-copyright.png')
+
+.n-icon-fb
+  width: 12px
+  height: 23px
+  background-image: url('../img/icons/icon-fb.png')
+
+.n-icon-inst
+  width: 18px
+  height: 19px
+  background-image: url('../img/icons/icon-inst.png')
+
+.n-header
   background-color: #fff
   text-transform: uppercase
   padding: 10px 0
   font-size: 15px
 
-.header-menu
+  a
+    text-decoration: none
+    color: $text
+
+.n-header-menu
   ul
     display: flex
     list-style: none
@@ -20,23 +45,35 @@
     padding: 0 18px
     margin: 0
 
-  a
+  .n-btn
     padding: 8px
 
-.header-menu-social
+    &:before
+      bottom: 7px
+
+    &.active
+      &:before
+        background-color: $green
+
+.n-header-menu-social
   display: none
 
-.header-logo
+.n-header-logo
   padding: 0 15px
+
   a
     display: block
+
   img
     display: block
+    max-width: 173px
+    height: auto
 
-.header-right
+.n-header-right
   padding-right: 15px
   padding-left: 15px
   font-size: 15px
+
   .n-btn
     text-transform: uppercase
     margin-right: 10px
@@ -47,3 +84,63 @@
 
   .n-btn-green
     padding: 11px 18px
+
+.n-footer
+  position: relative
+  z-index: 2
+  border-top: 2px solid #b22f25
+  background-color: #bca78d
+  padding: 15px 0 35px
+
+  a
+    text-decoration: none
+    color: $text
+    transition: 0.2s
+
+    &:hover
+      color: $green
+      text-decoration: underline
+
+.n-footer-wrapper
+  padding: 0 80px
+  display: flex
+
+.n-footer-logo
+  margin: 42px 0 30px
+
+.n-footer-copyright
+  font-size: 12px
+  display: flex
+  width: 100%
+  align-items: center
+
+  .n-icon
+    margin-right: 5px
+
+.n-footer-col
+  margin: 0 15px
+  flex-basis: 25%
+  line-height: 1.5
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+  li
+    padding: 0
+    margin: 0
+    display: block
+
+  .n-footer-social
+    padding: 0 10px
+
+  .n-btn
+    &:before
+      content: none
+
+.n-footer-col-title
+  font-weight: 500
+  text-transform: uppercase
+
+

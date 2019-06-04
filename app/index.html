@@ -28,30 +28,34 @@
 
 <body>
 
-<header class="header">
+<header class="n-header">
   <div class="n-container">
     <div class="n-row justify-content-between align-items-center">
-      <div class="header-left">
-        <div class="header-logo">
+      <div class="n-header-left">
+        <div class="n-header-logo">
           <a href="">
-            <img src="img/logo-header.png" alt="">
+            <img src="img/logo.png" alt="">
           </a>
         </div>
       </div>
-      <div class="header-menu">
+      <div class="n-header-menu">
         <ul>
-          <li><a href="">продукция</a></li>
-          <li><a href="">Проекты</a></li>
-          <li><a href="">О нас</a></li>
-          <li><a href="">о клинкере</a></li>
-          <li><a href="">Контакты</a></li>
-          <li class="header-menu-social">
-            <a href="" class="header-menu-social"></a>
-            <a href="" class="header-menu-social"></a>
+          <li><a href="" class="n-btn active">продукция</a></li>
+          <li><a href="" class="n-btn">Проекты</a></li>
+          <li><a href="" class="n-btn">О нас</a></li>
+          <li><a href="" class="n-btn">о клинкере</a></li>
+          <li><a href="" class="n-btn">Контакты</a></li>
+          <li class="n-header-menu-social">
+            <a href="" class="n-btn">
+              <span class="n-icon n-icon-fb"></span>
+            </a>
+            <a href="" class="n-btn">
+              <span class="n-icon n-icon-inst"></span>
+            </a>
           </li>
         </ul>
       </div>
-      <div class="header-right">
+      <div class="n-header-right">
         <button class="n-btn n-btn-green">позвоните нам</button>
         <button class="n-btn">ru</button>
         <button class="n-btn">en</button>
@@ -76,7 +80,7 @@
           </div>
           <div class="n-main-slide">
             <div class="n-main-slide-img">
-              <img src="img/slide1.png" alt="">
+              <img src="img/slide2.jpg" alt="">
             </div>
             <div class="n-main-slide-text">
               <div class="h1">Мы можем предложить</div>
@@ -85,7 +89,7 @@
           </div>
           <div class="n-main-slide">
             <div class="n-main-slide-img">
-              <img src="img/slide1.png" alt="">
+              <img src="img/slide3.jpg" alt="">
             </div>
             <div class="n-main-slide-text">
               <div class="h1">Мы можем предложить</div>
@@ -100,7 +104,7 @@
     <div class="n-container">
       <div class="n-row">
         <div class="n-section-title">
-          <h3>наша клинкерная плитка</h3>
+          <h1 class="h3">наша клинкерная плитка</h1>
         </div>
         <div class="n-tile-tabs js_tabs">
           <div class="n-tile-tabs-head">
@@ -114,21 +118,103 @@
           </div>
           <div class="n-tile-tabs-body">
             <div id="tab1" class="n-tile-tab js_tab-item">
-
+              <div class="n-container-fluid">
+                <div class="n-row">
+                  <div class="n-tile-img">
+                    <img src="img/tab1.jpg" alt="">
+                  </div>
+                  <div class="n-tile-info">
+                    <h2 class="h3">Фасаданая</h2>
+                    <div class="n-tile-btns">
+                      <a href="" class="n-btn n-btn-green">В каталог</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div id="tab2" class="n-tile-tab js_tab-item"></div>
-            <div id="tab3" class="n-tile-tab js_tab-item"></div>
-            <div id="tab4" class="n-tile-tab js_tab-item"></div>
-            <div id="tab5" class="n-tile-tab js_tab-item"></div>
-            <div id="tab6" class="n-tile-tab js_tab-item"></div>
+            <div id="tab2" class="n-tile-tab js_tab-item">
+              <div class="n-container-fluid">
+                <div class="n-row">
+                  <div class="n-tile-img">
+                    <img src="img/tab2.jpg" alt="">
+                  </div>
+                  <div class="n-tile-info">
+                    <h2 class="h3">Напольная и ступени</h2>
+                    <div class="n-tile-btns">
+                      <a href="" class="n-btn n-btn-green">В каталог</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab3" class="n-tile-tab js_tab-item">
+              <div class="n-container-fluid">
+                <div class="n-row">
+                  <div class="n-tile-img">
+                    <img src="img/tab3.jpg" alt="">
+                  </div>
+                  <div class="n-tile-info">
+                    <h2 class="h3">Брусчатка</h2>
+                    <div class="n-tile-btns">
+                      <a href="" class="n-btn n-btn-green">В каталог</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab4" class="n-tile-tab js_tab-item">
+              <div class="n-container-fluid">
+                <div class="n-row">
+                  <div class="n-tile-img">
+                    <img src="img/tab4.jpg" alt="">
+                  </div>
+                  <div class="n-tile-info">
+                    <h2 class="h3">Террасные плиты</h2>
+                    <div class="n-tile-btns">
+                      <a href="" class="n-btn n-btn-green">В каталог</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab5" class="n-tile-tab js_tab-item">
+              <div class="n-container-fluid">
+                <div class="n-row">
+                  <div class="n-tile-img">
+                    <img src="img/tab5.jpg" alt="">
+                  </div>
+                  <div class="n-tile-info">
+                    <h2 class="h3">Пром плитка</h2>
+                    <div class="n-tile-btns">
+                      <a href="" class="n-btn n-btn-green">В каталог</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab6" class="n-tile-tab js_tab-item">
+              <div class="n-container-fluid">
+                <div class="n-row">
+                  <div class="n-tile-img">
+                    <img src="img/tab6.jpg" alt="">
+                  </div>
+                  <div class="n-tile-info">
+                    <h2 class="h3">ТИПЫ ФАСАДОВ</h2>
+                    <div class="n-tile-btns">
+                      <a href="" class="n-btn n-btn-green">В каталог</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div id="tab7" class="n-tile-tab tab-active js_tab-item">
               <div class="n-container-fluid">
                 <div class="n-row">
                   <div class="n-tile-img">
-                    <img src="img/tab7.png" alt="">
+                    <img src="img/tab7.jpg" alt="">
                   </div>
                   <div class="n-tile-info">
-                    <h3>дизайнерам и архитекторам</h3>
+                    <h2 class="h3">дизайнерам и архитекторам</h2>
                     <p>1. Используйте наши готовые 3D текстуры для своих визуализаций!<br>
                       2. Будьте уверены в применяемом материале. Лучшее европейское качество - гарантия 25 лет от
                       производителя<br>
@@ -161,9 +247,9 @@
             <div class="n-about-img">
               <img src="img/icons/icon-delivery.png" alt="">
             </div>
-            <div class="n-about-title">
+            <h3 class="n-about-title">
               Бесплатная доставка
-            </div>
+            </h3>
             <div class="n-about-desc">
               Все наши цены
               включают доставку
@@ -174,9 +260,9 @@
             <div class="n-about-img">
               <img src="img/icons/icon-measure.png" alt="">
             </div>
-            <div class="n-about-title">
+            <h3 class="n-about-title">
               Выезд специалиста
-            </div>
+            </h3>
             <div class="n-about-desc">
               Бесплатный
               выезд специалиста,
@@ -187,9 +273,9 @@
             <div class="n-about-img">
               <img src="img/icons/icon-builder.png" alt="">
             </div>
-            <div class="n-about-title">
+            <h3 class="n-about-title">
               услуги под ключ
-            </div>
+            </h3>
             <div class="n-about-desc">
               Полный комплекс
               услуг под ключ!
@@ -200,9 +286,9 @@
             <div class="n-about-img">
               <img src="img/icons/icon-guarantee.png" alt="">
             </div>
-            <div class="n-about-title">
+            <h3 class="n-about-title">
               Гарантия
-            </div>
+            </h3>
             <div class="n-about-desc">
               Один год гарантии
               на все виды работ!
@@ -283,7 +369,98 @@
       </div>
     </div>
   </div>
+  <div class="n-section-benefit">
+    <div class="n-container">
+      <div class="n-row">
+        <div class="n-section-title">
+          <h3>Полезно знать</h3>
+        </div>
+        <div class="n-benefit-list">
+          <div class="n-benefit-item">
+            <a href="">
+              <div class="n-benefit-img">
+                <img src="img/benefit1.png" alt="">
+              </div>
+              <div class="n-benefit-desc">
+                Разные системы монтажа
+                под ваши потребности
+              </div>
+            </a>
+          </div>
+          <div class="n-benefit-item">
+            <a href="">
+              <div class="n-benefit-img">
+                <img src="img/benefit2.png" alt="">
+              </div>
+              <div class="n-benefit-desc">
+                Монтаж с утеплителем
+                (пенополистиролом или мин. Плитой)
+              </div>
+            </a>
+          </div>
+          <div class="n-benefit-item">
+            <a href="">
+              <div class="n-benefit-img">
+                <img src="img/benefit3.png" alt="">
+              </div>
+              <div class="n-benefit-desc">
+                Преимущества клинкера перед
+                другими фасадными материалами
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<footer class="n-footer">
+  <div class="n-container">
+    <div class="n-footer-wrapper">
+      <div class="n-footer-col">
+        <div class="n-footer-logo">
+          <img src="img/logo.png" alt="">
+        </div>
+        <div class="n-footer-copyright">
+          <span class="n-icon n-icon-copyright"></span>
+          2019 Architecture Desigh Inc.
+        </div>
+      </div>
+      <div class="n-footer-col">
+        <div class="n-footer-col-title">Каталог:</div>
+        <ul>
+          <li><a href="">Клинкерная плитка</a></li>
+          <li><a href="">Напольная плитка и ступени</a></li>
+          <li><a href="">Брусчатка</a></li>
+          <li><a href="">Террасные плиты</a></li>
+          <li><a href="">Промышленные полы</a></li>
+          <li><a href="">Фальш полы</a></li>
+        </ul>
+      </div>
+      <div class="n-footer-col">
+        <div class="n-footer-col-title">Полезные ссылки:</div>
+        <ul>
+          <li><a href="">Услуги</a></li>
+          <li><a href="">Проекты</a></li>
+          <li><a href="">О нас</a></li>
+          <li><a href="">Полезно знать</a></li>
+        </ul>
+      </div>
+      <div class="n-footer-col">
+        <div class="n-footer-col-title">Контакты:</div>
+        <ul>
+          <li><a href="">555-555-555</a></li>
+          <li><a href="">info@klinker.kz</a></li>
+          <li class="n-footer-social">
+            <a href="" class="n-btn"><span class="n-icon n-icon-fb"></span></a>
+            <a href="" class="n-btn"><span class="n-icon n-icon-inst"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 
 <script src="js/scripts.min.js"></script>
 

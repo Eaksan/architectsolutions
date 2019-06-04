@@ -19,6 +19,14 @@ body
     border: #666 1px solid
     outline: none
 
+a
+  text-decoration: none
+  color: $text
+
+  &:hover
+    text-decoration: underline
+    color: $green
+
 .n-main
   font-size: 12px
 
@@ -94,14 +102,6 @@ body
 .align-items-center
   align-items: center
 
-a
-  text-decoration: none
-  color: $text
-
-  &:hover
-    text-decoration: underline
-    color: $green
-
 .n-btn
   border: none
   padding: 8px
@@ -110,16 +110,31 @@ a
   cursor: pointer
   font-size: 15px
   transition: 0.2s
-  
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    bottom: 5px
+    width: calc(100% - 16px)
+    height: 1px
+    background-color: $green
+    opacity: 0
+    transition: 0.2s
+
+
   &:hover
-    text-decoration: underline
     color: #000
+    &:before
+      opacity: 1
 
   &:focus
     outline: none
 
   &.active
-    text-decoration: underline
+    &:before
+      opacity: 1
+      background-color: $text
 
 .n-btn-block
   display: block
@@ -127,6 +142,9 @@ a
 .n-btn-green
   background-color: $green
   color: #fff
+
+  &:before
+    content: none
 
   &:hover
     color: #fff
