@@ -1,0 +1,139 @@
+@import "vars"
+@import "fonts"
+
+body
+  margin: 0
+  min-width: 320px
+  position: relative
+  line-height: 1.65
+  font-family: $default-font
+  overflow-x: hidden
+  color: $text
+  box-sizing: border-box
+
+  *
+    box-sizing: border-box
+
+
+  input, textarea
+    border: #666 1px solid
+    outline: none
+
+.n-main
+  font-size: 12px
+
+  ::placeholder
+    color: #666
+
+  ::selection
+    background-color: $accent
+    color: #fff
+
+  .img-responsive
+    display: block
+    max-width: 100%
+    height: auto
+
+    &.img-width
+      width: 100%
+
+  .text-center
+    text-align: center
+
+  b, strong
+    font-weight: bold
+
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6
+    font-family: $title-font
+    margin: 0 0 1em
+    font-weight: bold
+    line-height: 1.3
+
+  h1, .h1
+    font-size: 72px
+
+  h2, .h2
+    font-size: 40px
+
+  h3, .h3
+    font-size: 36px
+
+  p
+    margin: 0 0 15px
+
+.n-container-fluid, .n-container
+  padding: 0 15px
+
+.n-container-fluid
+  width: 100%
+
+.n-container
+  width: 1200px
+  margin: 0 auto
+
+.n-row
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -15px
+
+.justify-content-between
+  justify-content: space-between
+
+.justify-content-center
+  justify-content: center
+
+.justify-content-around
+  justify-content: space-around
+
+.justify-content-evenly
+  justify-content: space-evenly
+
+.justify-content-end
+  justify-content: flex-end
+
+.align-items-center
+  align-items: center
+
+a
+  text-decoration: none
+  color: $text
+
+  &:hover
+    text-decoration: underline
+    color: $green
+
+.n-btn
+  border: none
+  padding: 8px
+  background: none
+  display: inline-block
+  cursor: pointer
+  font-size: 15px
+  transition: 0.2s
+  
+  &:hover
+    text-decoration: underline
+    color: #000
+
+  &:focus
+    outline: none
+
+  &.active
+    text-decoration: underline
+
+.n-btn-block
+  display: block
+
+.n-btn-green
+  background-color: $green
+  color: #fff
+
+  &:hover
+    color: #fff
+    background-color: lighten($green, 5)
+    text-decoration: none
+
+  &:active
+    background-color: darken($green, 5)
+
+
