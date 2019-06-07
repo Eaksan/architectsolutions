@@ -309,15 +309,71 @@
   font-weight: bold
   letter-spacing: 0.02em
 
+.n-blog-title
+  text-align: left
+  position: relative
+  padding: 0 0 0 85px
+  z-index: 1
 
+  .h3
+    display: inline-block
+    background-color: #fff
+    padding: 0 24px
+    z-index: 1
 
+  &:before
+    position: absolute
+    content: ''
+    left: 0
+    width: 100%
+    background-color: $green
+    height: 25px
+    top: calc(50% - 3px)
+    z-index: -1
+    transform: translateY(-50%)
 
+.n-blog
+  display: flex
+  flex-direction: column
+  padding: 19px 85px
 
+.n-blog-item
+  flex-basis: 100%
+  display: flex
+  margin-bottom: 86px
 
+  &:last-child
+    margin-bottom: 40px
 
+.n-blog-img
+  flex-basis: 400px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
 
+.n-blog-desc
+  flex-basis: calc(100% - 400px)
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: 0 30px
+  font-size: 15px
 
+  .n-btn
+    padding: 12px 39px
 
+  .n-blog-item-title
+    font-size: 18px
+    font-weight: 500
+    text-transform: uppercase
+    font-family: $default-font
+    margin-bottom: 10px
+    margin-top: -0.3em
+    line-height: 1.4
+
+  p
+    margin: 0
 
 
 @import "media"

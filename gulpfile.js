@@ -38,6 +38,7 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/simplebar/dist/simplebar.js',
 		'app/libs/slick/slick.js',
 		'app/js/common.js', // Always at the end
 		])
