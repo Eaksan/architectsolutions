@@ -226,6 +226,7 @@
 
 .n-why-left
   flex-basis: 58.33333%
+  max-width: 58.33333%
   position: relative
   padding: 50px 85px
   &:before
@@ -246,6 +247,7 @@
 
 .n-why-right
   flex-basis: 41.66667%
+  max-width: 41.66667%
   font-size: 86px
   line-height: 0.87
   letter-spacing: 0.04em
@@ -374,6 +376,97 @@
 
   p
     margin: 0
+
+.n-catalog
+  flex-basis: 100%
+  display: flex
+  align-items: flex-start
+
+.n-catalog-left
+  flex-basis: 33.33333%
+  background-color: #bca78d
+  padding: 10px 15px 46px 15px
+  font-size: 12px
+
+  .h3, h3
+    font-size: 15px
+    font-family: $default-font
+    line-height: 1.6
+    margin-bottom: 20px
+
+  img
+    display: block
+    width: 100%
+    height: auto
+    margin-bottom: 20px
+
+.n-catalog-right
+  flex-basis: 66.66667%
+
+.n-catalog-top
+  background: $text url('../img/catalog-top.png') center no-repeat
+  background-size: cover
+  color: #fff
+  padding: 10px 15px 10px 45px
+  ul
+    display: flex
+    flex-wrap: wrap
+    margin: 0
+    padding: 0
+    list-style: none
+
+  li
+    flex-basis: 20%
+    max-width: 20%
+
+  .n-btn
+    color: #fff
+    padding: 4px 8px
+    max-width: 100%
+    white-space: nowrap
+    text-overflow: ellipsis
+    overflow: hidden
+    font-size: 15px
+    text-transform: uppercase
+    &:before
+      bottom: 2px
+      background-color: $green
+
+.n-catalog-list
+  display: flex
+  flex-wrap: wrap
+  padding: 15px 5px
+  figcaption
+    display: none
+
+  .simplebar-content
+    display: flex
+    flex-wrap: wrap
+    padding: 15px 5px
+
+.n-catalog-item
+  flex-basis: 14.285%
+  max-width: 14.258%
+  padding: 0 10px 10px
+  margin: 0
+
+.n-catalog-item-img
+  width: 100%
+
+  img
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.n-catalog-item-name
+  white-space: nowrap
+  text-overflow: ellipsis
+  overflow: hidden
+  width: 100%
+  font-size: 10.5px
+  text-align: center
+
 
 
 @import "media"

@@ -6,6 +6,33 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .n-tile-tabs-head
+    flex-wrap: wrap
+    justify-content: space-evenly
+
+  .n-about-list
+    padding: 0
+
+  .n-about-item
+    padding: 0 10px
+
+  .n-why-left
+    &:before
+      content: none
+
+  .n-why-right
+    background: url('../img/bg-why-right.png') center no-repeat
+    background-size: cover
+    padding-left: 40px
+    &:before
+      content: none
+
+  .n-benefit-list
+    padding: 0
+
+  .n-footer-wrapper
+    padding: 0
+
 // ≥992px
 +media-breakpoint-down(md)
 
