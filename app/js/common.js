@@ -5,6 +5,8 @@ $(function () {
         dots: true
     });
 
+    $('body').css('margin-top', $('header').outerHeight());
+
     $.fn.customTabs = function () {
         return this.each(function () {
             var $this = $(this);
