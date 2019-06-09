@@ -29,6 +29,7 @@
   text-transform: uppercase
   padding: 10px 0
   font-size: 15px
+  z-index: 3
 
   a
     text-decoration: none
@@ -54,9 +55,6 @@
     &.active
       &:before
         background-color: $green
-
-.n-header-menu-social
-  display: none
 
 .n-header-logo
   padding: 0 15px
@@ -84,6 +82,36 @@
 
   .n-btn-green
     padding: 11px 18px
+
+.n-btn-mobile-menu
+  height: 46px
+
+  span
+    width: 40px
+    height: 6px
+    margin-bottom: 6px
+    display: block
+    background-color: $text
+    transition: 0.2s
+
+    &:last-child
+      margin-bottom: 0
+
+  &:before
+    content: none
+
+  &.open-menu
+    span
+      &:nth-child(1)
+        height: 4px
+        transform: rotate(45deg) translate(8px, 7px)
+
+      &:nth-child(2)
+        opacity: 0
+
+      &:nth-child(3)
+        height: 4px
+        transform: rotate(-45deg) translate(8px, -8px)
 
 .n-footer
   position: relative
@@ -148,5 +176,186 @@
   .n-header-menu
     li
       padding: 0
+
+  .n-footer-wrapper
+    padding: 0
+
+// ≥992px
++media-breakpoint-down(md)
+  .n-header
+    position: relative
+
+  .n-header-menu
+    position: absolute
+    overflow: hidden
+    right: 100%
+    top: 100%
+    opacity: 0
+    transition: 0.2s
+    z-index: 3
+    background-color: #fff
+    width: 290px
+    max-height: calc(100vh - 66px)
+    overflow-y: auto
+
+    ul
+      display: block
+
+    li
+      border-bottom: 1px solid #b22f25
+
+    &.open-menu
+      transform: translateX(100%)
+      opacity: 1
+
+    .n-btn
+      display: block
+      padding: 5px 15px
+      font-size: 18px
+      text-transform: none
+      line-height: 30px
+
+      &:before
+        content: none
+
+      &.active
+        color: #b22f25
+
+    .n-header-menu-social
+      text-align: center
+      .n-btn
+        display: inline-flex
+        height: 40px
+        padding: 0 10px
+        align-items: center
+        
+  .n-header-dropdown
+    & > .n-btn
+      position: relative
+      &:after
+        position: absolute
+        content: ''
+        width: 30px
+        height: 30px
+        background: url("../img/icons/icon-dropdown.png") center no-repeat
+        
+    &.open-menu
+      border-bottom-color: #fff
+      & > .n-btn
+        color: #b22f25
+
+  .n-header-dropdown
+    position: relative
+    ul
+      display: none
+      visibility: visible
+      opacity: 1
+      padding: 0
+      position: static
+      background-color: #b22f25
+  
+      a
+        color: #fff
+        padding: 5px 15px
+        font-size: 18px
+        text-transform: none
+        line-height: 30px
+        display: block
+
+  .n-footer-wrapper
+    flex-wrap: wrap
+
+  .n-footer-col
+    flex-basis: 50%
+    max-width: 50%
+    margin: 0 0 20px
+    padding: 0 15px
+
+    &:first-child
+      order: 2
+      text-align: center
+
+  .n-footer-logo
+    margin: 0 0 10px
+    img
+      margin: 0 auto
+
+  .n-footer-copyright
+    justify-content: center
+
+
+// ≤768px
++media-breakpoint-up(lg)
+  .n-header-mobile
+    display: none
+
+  .n-header-menu-social
+    display: none
+
+  .n-header-dropdown
+    position: relative
+    ul
+      visibility: hidden
+      opacity: 0
+      transition: 0.3s
+      margin: 0
+      padding: 10px
+      position: absolute
+      top: 100%
+      left: 0
+      display: block
+      z-index: 2
+      background-color: #fff
+
+      a
+        display: block
+        white-space: nowrap
+
+        &:hover
+          color: $green
+
+    &:hover
+      ul
+        visibility: visible
+        opacity: 1
+
+// ≥576px
++media-breakpoint-down(xs)
+  .n-header
+    padding: 2px 0
+
+  .n-header-right
+    display: none
+
+  .n-header-logo
+    padding: 0 8px
+
+  .n-header-menu
+    max-height: calc(100vh - 50px)
+
+  .n-btn-mobile-menu
+    padding: 8px 15px
+    span
+      height: 5px
+
+    &.open-menu
+      span:nth-child(3)
+        transform: rotate(-45deg) translate(8px,-7px)
+
+  .n-footer
+    padding-bottom: 0
+    .n-container-fluid
+      padding: 0
+
+  .n-footer-col
+    flex-basis: 100%
+    max-width: 100%
+    padding: 0 10px
+    margin: 0 0 10px
+
+    .n-footer-social
+      text-align: center
+      padding: 10px 0 0
+
 
 

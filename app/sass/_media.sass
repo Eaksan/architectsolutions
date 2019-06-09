@@ -10,6 +10,9 @@
     flex-wrap: wrap
     justify-content: space-evenly
 
+    .n-btn
+      margin: 0 8px
+
   .n-about-list
     padding: 0
 
@@ -30,17 +33,246 @@
   .n-benefit-list
     padding: 0
 
-  .n-footer-wrapper
-    padding: 0
+  .n-blog
+    padding: 19px 0
 
 // ≥992px
 +media-breakpoint-down(md)
+  .n-tile-img
+    flex-basis: 250px
+
+  .n-tile-info
+    flex-basis: calc(100% - 250px)
+    padding: 0 20px 100px
+
+  .n-about-desc
+    padding: 0
+
+  .n-about-item
+    .n-about-title
+      min-height: 2.6em
+      display: flex
+      align-items: center
+      width: 100%
+      justify-content: center
+
+  .n-section-material
+    .n-about-desc
+      padding: 0
+
+  .n-why-left
+    padding: 20px 15px
+
+  .n-benefit-item
+    padding: 0 15px
+
+  .n-catalog
+    flex-wrap: wrap
+
+  .n-catalog-left
+    order: 2
+    flex-basis: 100%
+    max-width: 100%
+    max-height: none
+
+    img
+      width: auto
+      max-width: 100%
+
+  .n-catalog-right
+    flex-basis: 100%
+    max-width: 100%
+
+  .n-blog-img
+    flex-basis: 33.3333%
+
+  .n-blog-desc
+    flex-basis: 66.6667%
+
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .n-tile-tabs-head
+    display: none
+
+  .n-tile-img
+    display: none
+
+  .n-tile-info
+    flex-basis: 100%
+    max-width: 100%
+    padding: 0 0 20px
+    h2
+      display: none
+
+  .n-tile-btns
+    position: static
+    text-align: center
+
+  .n-section-about
+    background: #2e2c2b
+
+  .n-section-material
+    background: #3d281c
+
+  .n-about-list
+    display: block
+
+  .n-about-item
+    flex-basis: 100%
+    margin-bottom: 30px
+
+    &:last-child
+      margin-bottom: 0
+
+    .n-about-title
+      min-height: auto
+
+  .n-about-desc
+    max-width: 290px
+    margin: 15px auto 0
+
+  .n-why-left
+    order: 2
+    flex-basis: 100%
+    max-width: 100%
+
+  .n-why-right
+    order: 1
+    flex-basis: 100%
+    max-width: 100%
+
+  .n-benefit-list
+    display: block
+
+  .n-benefit-item
+    flex-basis: 100%
+    max-width: 100%
+    margin-bottom: 25px
+
+  .n-catalog-top
+    padding: 10px 15px
+
+    li
+      flex-basis: 33.3333%
+      max-width: 33.3333%
+
+  .n-catalog-item
+    flex-basis: 20%
+    max-width: 20%
+
+  .n-blog-item
+    flex-wrap: wrap
+    margin-bottom: 30px
+
+  .n-blog-img, .n-blog-desc
+    flex-basis: 100%
+
+  .n-blog-desc
+    padding: 20px 0 0
+
+  .n-blog-btns
+    margin-top: 23px
+
+  .n-blog-title
+    padding: 0
+
+    .h3
+      padding: 0 24px 0 0
+
 
 // ≥576px
 +media-breakpoint-down(xs)
+  .n-section-title
+
+  .n-section-slider
+    display: none
+
+  .n-section-tile
+    padding-top: 3px
+
+  .n-tile-info
+    padding: 0 15px 20px
+
+  .n-section-about
+    padding: 20px 0
+
+    .n-section-title
+      font-size: 36px
+      padding: 7px 15px
+
+  .n-about-item
+
+    .n-about-title
+      margin-top: 3px
+
+  .n-section-material
+    padding-bottom: 30px
+
+    .n-section-title
+      padding: 7px 0 35px
+
+  .n-why-right
+    padding-top: 36px
+
+  .n-why-left
+    padding: 26px 15px 0
+
+  .n-section-benefit
+    .n-section-title
+      padding: 25px 0 22px
+
+  .n-benefit-item
+    padding: 0 8px
+
+  .n-benefit-desc
+    margin-top: 22px
+
+  .n-catalog-top
+    padding: 10px 15px
+
+    li
+      flex-basis: 33.3333%
+      max-width: 33.3333%
+
+  .n-catalog-top
+    padding: 0
+    ul
+      flex-direction: column
+      height: 130px
+      overflow-x: scroll
+      padding: 2px 5px
+
+    li
+      flex-basis: auto
+      max-width: none
+      margin-right: 20px
+
+    .n-btn
+      padding: 4px 3px 3px
+
+  .n-catalog-item
+    flex-basis: 33.3333%
+    max-width: 33.3333%
+
+  .n-catalog-list
+    padding: 10px 0
+
+  .n-catalog-item
+    padding: 0 5px 10px
+
+  .n-blog-title
+    padding: 27px 0 0
+
+    .h3
+      padding-left: 5px
+
+  .n-blog-item
+    padding-left: 10px
+    padding-right: 10px
+
+  .n-blog-desc
+    padding-top: 29px
 
 
 /*==========  Mobile First  ==========*/
@@ -50,6 +282,8 @@
 
 // ≤768px
 +media-breakpoint-up(md)
+  .n-btn-accordion
+    display: none
 
 // ≤992px
 +media-breakpoint-up(lg)

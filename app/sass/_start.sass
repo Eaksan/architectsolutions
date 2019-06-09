@@ -11,6 +11,26 @@ body
   color: $text
   box-sizing: border-box
 
+  &:before
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(#000, 0.6)
+    visibility: hidden
+    opacity: 0
+    z-index: 2
+
+  &.open-menu
+    width: 100vw
+    height: 100vh
+    overflow: hidden
+    &:before
+      visibility: visible
+      opacity: 1
+
   *
     box-sizing: border-box
 
@@ -26,6 +46,11 @@ a
   &:hover
     text-decoration: underline
     color: $green
+
+.n-img-responsive
+  display: block
+  max-width: 100%
+  height: auto
 
 .n-main
   font-size: 14px
@@ -163,12 +188,24 @@ a
 // ≥992px
 +media-breakpoint-down(md)
   .n-container
-    width: 980px
+    width: 760px
 
 // ≥768px
 +media-breakpoint-down(sm)
   .n-container
-    width: 760px
+    width: 546px
+
+  .n-main
+
+    h1, .h1
+      font-size: 40px
+
+    h2, .h2
+      font-size: 36px
+
+    h3, .h3
+      font-size: 36px
+
 
 // ≥576px
 +media-breakpoint-down(xs)
