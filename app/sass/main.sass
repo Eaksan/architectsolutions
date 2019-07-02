@@ -1,7 +1,4 @@
 @import "vars"
-@import "fonts"
-@import "libs"
-@import "start"
 @import "header"
 
 .n-section-title
@@ -116,10 +113,12 @@
 .n-tile-tabs
   display: block
   flex-basis: 100%
+  max-width: 100%
 
 .n-tile-tabs-head
   display: flex
   flex-basis: 100%
+  max-width: 100%
   padding: 5px 12px
   justify-content: space-between
 
@@ -357,6 +356,7 @@
 
 .n-blog-item
   flex-basis: 100%
+  max-width: 100%
   display: flex
   margin-bottom: 86px
 
@@ -396,21 +396,17 @@
 
 .n-catalog
   flex-basis: 100%
+  max-width: 100%
   display: flex
   align-items: flex-start
 
 .n-catalog-left
   flex-basis: 25%
+  max-width: 25%
   background-color: #bca78d
   padding: 10px 15px 46px 15px
   font-size: 12px
   height: calc(100vh - 61px)
-
-  .h3, h3
-    font-size: 15px
-    font-family: $default-font
-    line-height: 1.6
-    margin-bottom: 20px
 
   img
     display: block
@@ -420,6 +416,7 @@
 
 .n-catalog-right
   flex-basis: 75%
+  max-width: 75%
 
 .n-catalog-top
   background: $text url('../img/catalog-top.png') center no-repeat
@@ -470,9 +467,27 @@
   max-width: 14.258%
   padding: 0 10px 10px
   margin: 0
+  cursor: pointer
+
+  &:hover
+    .n-catalog-item-img:after
+      opacity: 1
 
 .n-catalog-item-img
   width: 100%
+  position: relative
+
+  &:after
+    position: absolute
+    content: ''
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    opacity: 0
+    transition: 0.2s
+    background: rgba(#000, 0.4) url('../img/icons/icon-zoom.png') center no-repeat
+    z-index: 2
 
   img
     display: block
