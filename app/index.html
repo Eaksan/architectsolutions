@@ -544,20 +544,36 @@
 </footer>
 
 <div class="n-modal n-modal-contact" id="contact-modal">
-  <div class="n-modal-title">
-    <h3>Заказ обратного звонка</h3>
+  <div class="js-contact-form">
+    <div class="n-modal-title">
+      <h3>Заказ обратного звонка</h3>
+    </div>
+    <div class="n-modal-content">
+      <form action="" method="POST" class="n-contact-form">
+        <div class="n-form-row">
+          <input name="phone" type="tel" class="n-form-input" placeholder="Ваш телефон" required>
+        </div>
+        <div class="n-form-row">
+          <button class="n-btn n-btn-green" type="submit">
+            Отправить
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
-  <div class="n-modal-content">
-    <form action="" class="n-contact-form">
-      <div class="n-form-row">
-        <input type="tel" class="n-form-input" placeholder="Ваш телефон">
+  <div class="js-contact-success">
+    <div class="n-modal-title">
+      <h3>Менеджер свяжется с вами<br> в ближайшее время</h3>
+    </div>
+    <div class="n-modal-content">
+      <div class="n-contact-form">
+        <div class="n-form-row">
+          <button class="n-btn n-btn-green" type="button">
+            Закрыть
+          </button>
+        </div>
       </div>
-      <div class="n-form-row">
-        <button class="n-btn n-btn-green" type="submit">
-          Отправить
-        </button>
-      </div>
-    </form>
+    </div>
   </div>
 </div>
 
