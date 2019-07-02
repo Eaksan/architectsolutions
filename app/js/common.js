@@ -136,4 +136,39 @@ $(function () {
         }
     });
 
+    (function () {
+        const modal = $('#contact-modal');
+        $(modal).find('.js-contact-form').show();
+        $(modal).find('.js-contact-success').hide();
+
+        $('[data-fancybox][data-src="#contact-modal"]').fancybox({
+            clickSlide: false
+        });
+
+        $(modal).find('form').on('submit', function (event) {
+            event.preventDefault();
+
+            const form = this;
+            $(form).find('button').prop('disabled', true);
+            $(modal).find('button.fancybox-close-small').hide();
+
+            $.ajax({
+                url: $(form).attr('action'),
+                method: $(form).attr('method'),
+                data: $(form).serialize(),
+                success: function () {
+                    $(modal).find('.js-contact-success').show();
+                    $(modal).find('.js-contact-form').hide();
+                },
+                complete: function () {
+                    $(modal).find('button.fancybox-close-small').show();
+                    $(form).find('button').prop('disabled', false);
+                }
+            });
+        });
+
+        $(modal).find('.js-contact-success button').on('click', function () {
+            $.fancybox.close();
+        });
+    })();
 });
