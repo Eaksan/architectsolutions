@@ -5,6 +5,11 @@ $(function () {
         dots: true
     });
 
+    $('.js_benefit-slider').slick({
+        slidesToShow: 3,
+        dots: true
+    });
+
     $('body').css('margin-top', $('header').outerHeight());
 
     $.fn.customTabs = function () {
