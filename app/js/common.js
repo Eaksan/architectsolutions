@@ -7,7 +7,21 @@ $(function () {
 
     $('.js_benefit-slider').slick({
         slidesToShow: 3,
-        dots: true
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('body').css('margin-top', $('header').outerHeight());

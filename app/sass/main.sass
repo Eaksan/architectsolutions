@@ -307,6 +307,72 @@
   flex-basis: 100%
   display: block
   padding: 0 53px
+  margin-bottom: 30px
+  position: relative
+
+  .slick-slide, a
+    &:focus
+      outline: none
+
+  .slick-prev, .slick-next
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 30px
+    height: 30px
+    background: url('../img/icons/icon-right.svg') center no-repeat
+    right: 0
+    font-size: 0
+    line-height: 0
+    border: none
+    cursor: pointer
+    opacity: 0.8
+    transition: 0.2s
+
+    &:hover
+      opacity: 1
+
+    &:focus
+      outline: none
+    
+  .slick-prev
+    left: 0
+    background-image: url('../img/icons/icon-left.svg')
+
+  .slick-dots
+    list-style: none
+    position: absolute
+    top: 100%
+    left: 50%
+    transform: translateX(-50%)
+    margin: 0
+    padding: 0
+
+    li
+      display: inline-block
+      margin: 0 5px
+
+    button
+      font-size: 0
+      line-height: 0
+      width: 8px
+      height: 8px
+      background-color: $green
+      display: block
+      padding: 0
+      border: none
+      border-radius: 5px
+      opacity: 0.3
+      cursor: pointer
+      transition: 0.2s
+
+      &:focus
+        outline: none
+
+    .slick-active
+      button
+        opacity: 1
+
 
 .n-benefit-item
   padding: 0 30px
